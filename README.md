@@ -68,3 +68,25 @@ Faça algumas configurações se necessário.
 5- Na máquina A: `ssh-keygen -t rsa -f ~/.ssh/id_rsa` para gerar keys e `scp .ssh/id_rsa.pub usuario2@ip:/home/usuario2/.ssh/authorized_keys` (substituia 'ip' pelo ip da máquina B) para transferir a key para a máquina B.
 
 6- Na máquina A: `ssh usuario2@ip` (substituia 'ip' pelo ip da máquina B) caso você entre sem precisar digitar a senha, deu tudo certo.
+
+# Recomendações 
+
+1- Usar um usuário comum com acessos root.
+
+2-Averiguar quanto de memória sua máquina possui para que o computador suporte na hora de baixar a VM.
+
+3-Sempre pegar link de sites oficiais.
+
+4- Dar um systemctl restart depois de cada configuração.
+
+5-Usar snapshosts que são feitos para guardar o estado atual da sua máquina, gerando uma imagem de estado atual. Um bom momento para criar um snapshot é sempre antes de efetuar qualquer alteração mais importante. Evitando asssim, perda de dados nos erros e insucessos dos testes.
+
+# Links usados
+
+1- Download e instalação do VIrtualBox.
+
+2- Download e instalação do Oracle Linux 8.6 - sem interface gráfica.
+
+Virtualbox download: https://www.virtualbox.org/wiki/Downloads
+
+OracleLinux download: https://yum.oracle.com/oracle-linux-isos.html
